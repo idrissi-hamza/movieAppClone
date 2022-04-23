@@ -5,7 +5,7 @@ import { ThumbUpIcon } from "@heroicons/react/outline";
 const Thumbnail = ({ result }) => {
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
   return (
-    <pre className="p-2 group cursor-pointer transition duration-200  transform sm:hover:scale-105 ">
+    <div className="p-2 group cursor-pointer transition duration-200  transform sm:hover:scale-105 ">
       {/* {JSON.stringify(result, null, 2)} */}
       <Image
         layout="responsive"
@@ -22,7 +22,7 @@ const Thumbnail = ({ result }) => {
           <ThumbUpIcon className="h-5 mx-2" /> {result.vote_count}
         </p>
       </div>
-    </pre>
+    </div>
   );
 };
 
